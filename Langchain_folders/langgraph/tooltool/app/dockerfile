@@ -1,0 +1,8 @@
+FROM llama:0.1v
+
+RUN mkdir /home
+COPY . /home
+
+WORKDIR /home
+
+CMD ['uvicorn','main:app','--reload','-port','8000:8000']
