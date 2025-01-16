@@ -2,3 +2,6 @@ doc/
 figures/
 ab.py
 docker-compose.yml
+Langchain_folders/finetuning/
+Langchain_folders/test_images/
+Langchain_folders/.gradio/

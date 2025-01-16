@@ -24,7 +24,7 @@ celery_app = Celery('task',
                     broker='http:localhost:6380/0',
                     backend ='http:localhost:6380/0')
 
-os.environ['LANGCHAIN_API_KEY'] = "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"
+os.environ['LANGCHAIN_API_KEY'] = ""
 os.environ['LANGCHAIN_ENDPOINT'] = "https://api.smith.langchain.com"
 os.environ['LANGCHAIN_PROJECT'] = "agent"
 os.environ['LANGCHAIN_TRACING_V2'] = "true"
