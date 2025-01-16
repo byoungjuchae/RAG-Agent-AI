@@ -310,7 +310,5 @@ if __name__ == '__main__':
     
     chain_multimodal_rag = multi_modal_rag_chain(retriever_multi_vector_img)
     query="How much time does BayesDiff require, and how long does QAT and PTQ take?"
-    import pdb
-    pdb.set_trace()
     response = chain_multimodal_rag.invoke(query)
     print(response)
