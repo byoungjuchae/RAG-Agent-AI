@@ -1,5 +1,4 @@
 doc/
 figures/
-Langchain/
 ab.py
 docker-compose.yml
