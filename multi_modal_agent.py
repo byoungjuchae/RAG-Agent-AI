@@ -67,8 +67,8 @@ def make_image(prompt : str):
     
     image = pipe(prompt,height=1024,width=512).images[0]
     base64_image = convert_to_base64(image)
-    image_name = './flux-dev.png'
-    image.save('flux-dev.png')
+    image_name = './flux-schnell.png'
+    image.save('flux-schnell.png')
     # llm_vision = ChatOllama(model='llama3.2-vision:latest',temperature=0)
     # chain = prompt_func | llm_vision | StrOutputParser()
     # response = chain.invoke({'text':'Describe the picture','image':base64_image})
@@ -127,5 +127,5 @@ def main(query:str):
         
 
 if __name__ == '__main__':
-    query = "Describe the image. So you follow this steps.First retrieve the documents. Second create the harry porter. Third describe the image."
+    query = "Describe the image. follow these steps.First create the person who eats a hamburger. Second describe the image."
     main(query)
