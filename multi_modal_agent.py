@@ -43,23 +43,6 @@ def prompt_func(data):
     return [HumanMessage(content=content_parts)]
 
 
-@tool
-def retriever(query: str) -> str:
-    """
-    When the input is relevant to the pdf file, you can use this tool. And return the answer
-    """
-    document = '/home/dexter/mlops/Langchain/langgraph/tooltool/uploaded_files/DemoFusion_ Democratisting High-Resolution Image Genration With No money.pdf'
-    docs = PyPDFLoader(document).load()
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000,chunk_overlap=0)
-    docs = text_splitter.split_documents(docs)
-    embedding = HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2',
-                                      model_kwargs={'device':'cuda'})
-    vectorstore = FAISS.from_documents(docs,embedding=embedding)
-    retriever = vectorstore.as_retriever()
-    
-    qe = retriever.get_relevant_documents(query)
-    
-    return qe
 @tool 
 def make_image(prompt : str):
     "When llm wants to make a image, use this tool."
