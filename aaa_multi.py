@@ -12,7 +12,7 @@ from langchain.smith import RunEvalConfig
 os.environ["LANGSMITH_TRACING"] = "true"
 os.environ["LANGSMITH_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGSMITH_PROJECT"] = "RAG"
-os.environ["LANGSMITH_API_KEY"] = "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"
+os.environ["LANGSMITH_API_KEY"] = ""
 
 
 loader = WebBaseLoader(

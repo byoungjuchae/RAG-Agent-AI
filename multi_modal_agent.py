@@ -83,7 +83,7 @@ def describe_image(data):
     llm_vision = ChatOllama(model='llama3.2-vision:latest',temperature=0)
     chain = prompt_func | llm_vision | StrOutputParser()
 
-    response = chain.invoke({'text':'Describe the picture one sentence.','image':data})
+    response = chain.invoke({'text':'Describe the image.','image':data})
 
     
     # promt = """ summarize the sentence"""
