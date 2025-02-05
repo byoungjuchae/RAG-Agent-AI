@@ -9,7 +9,7 @@ from langchain_core.runnables import RunnablePassthrough
 import os
 
 
-os.environ['LANGSMITH_API_KEY'] = "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"
+os.environ['LANGSMITH_API_KEY'] = ""
 os.environ['LANGSMITH_TRACING'] = "true"
 os.environ["LANGSMITH_PROJECT"] = "CRAG"
 
