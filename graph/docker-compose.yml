@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  app:
+    image: ollama/ollama:0.1v
+    volumes:
+      - .:/home
+    ports:
+      - '11434:11434'
+    networks:
+      - backend
+  db:
+    image: neo4j:latest
+    volumes:
+      - $HOME/neo4j/data:/data
+    ports:
+      - '7687:7687'
+      - '7474:7474'
+    
+    networks:
+      - backend
+networks:
+  backend:
+    driver: bridge

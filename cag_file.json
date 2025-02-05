@@ -1,0 +1,121 @@
+[   {
+        "question": "What is AGENTS?",
+        "answer": "AGENTS is an open-source library designed to facilitate the development of autonomous language agents by providing features like planning, memory, tool usage, multi-agent communication, and symbolic control."
+    },
+    {
+        "question": "Who developed AGENTS?",
+        "answer": "AGENTS was developed by researchers and engineers from AIWaves Inc., Zhejiang University, and ETH Z?rich."
+    },
+    {
+        "question": "What is the main goal of AGENTS?",
+        "answer": "The goal of AGENTS is to make it easier for both specialists and non-specialists to build, customize, test, tune, and deploy autonomous language agents."
+    },
+    {
+        "question": "How does AGENTS differ from existing language agent frameworks?",
+        "answer": "AGENTS supports tool usage, long-short term memory, multi-agent communication, human-agent interaction, and symbolic control, making it more versatile compared to other frameworks."
+    },
+    {
+        "question": "What are the key components of the AGENTS framework?",
+        "answer": "The key components include agents, environments, symbolic operating procedures (SOPs), and modularized prompts."
+    },
+    {
+        "question": "What is a symbolic operating procedure (SOP)?",
+        "answer": "An SOP is a structured set of step-by-step instructions that define an agent's behavior and transitions between different states to achieve a task."
+    },
+    {
+        "question": "How does AGENTS handle memory?",
+        "answer": "AGENTS integrates both long-term memory using VectorDB and semantic search and short-term memory through an LLM-managed scratchpad."
+    },
+    {
+        "question": "What external tools can AGENTS integrate with?",
+        "answer": "AGENTS supports integration with APIs, web navigation, and external tools for expanding the capabilities of language agents."
+    },
+    {
+        "question": "Can AGENTS support multi-agent communication?",
+        "answer": "Yes, AGENTS enables multiple agents to interact dynamically through a controller agent that schedules actions based on roles and state history."
+    },
+    {
+        "question": "What is dynamic scheduling in AGENTS?",
+        "answer": "Dynamic scheduling allows a controller agent to decide which agent should perform the next action, making multi-agent communication more flexible."
+    },
+    {
+        "question": "Does AGENTS allow human-agent interaction?",
+        "answer": "Yes, AGENTS allows users to take the role of an agent and interact with other language agents in both single and multi-agent settings."
+    },
+    {
+        "question": "What are some real-world applications of AGENTS?",
+        "answer": "AGENTS can be used for customer service, consulting, programming, writing, teaching, social experiments, and software development."
+    },
+    {
+        "question": "How does AGENTS ensure controllability of language agents?",
+        "answer": "AGENTS employs SOPs, which define structured agent behaviors, making actions more predictable and reducing randomness."
+    },
+    {
+        "question": "How does AGENTS implement tool usage?",
+        "answer": "Tool usage is facilitated via ToolComponents, which allow external API calls and context-dependent interactions using OpenAI's function-calling feature."
+    },
+    {
+        "question": "What is the difference between long-term and short-term memory in AGENTS?",
+        "answer": "Long-term memory stores historical interactions using a vector database, while short-term memory is updated dynamically through an LLM."
+    },
+    {
+        "question": "What is the Agent Hub?",
+        "answer": "The Agent Hub is a platform that allows users to share, search, and download fine-tuned language agents for easier customization."
+    },
+    {
+        "question": "What deployment options does AGENTS support?",
+        "answer": "AGENTS supports deployment via FastAPI, allowing language agents to be integrated into real-world applications."
+    },
+    {
+        "question": "Can AGENTS create new agent systems automatically?",
+        "answer": "Yes, AGENTS includes an automated SOP generation pipeline based on retrieval-augmented generation (RAG) for automatic agent creation."
+    },
+    {
+        "question": "What are some case studies presented in the paper?",
+        "answer": "Case studies include customer service agents, shopping assistants, sales agents, fiction studios, debates, and multi-agent software companies."
+    },
+    {
+        "question": "How does AGENTS handle web navigation?",
+        "answer": "AGENTS allows language agents to perform web searches and extract useful information via specialized APIs."
+    },
+    {
+        "question": "What is the main programming philosophy behind AGENTS?",
+        "answer": "AGENTS follows the principle that an autonomous agent is situated in an environment, allowing it to observe, act, and adapt dynamically."
+    },
+    {
+        "question": "What is the role of modularized prompts in AGENTS?",
+        "answer": "Modularized prompts allow flexible customization of agent behaviors by structuring task instructions, constraints, and examples."
+    },
+    {
+        "question": "How does AGENTS ensure a stable user experience?",
+        "answer": "By integrating SOPs and symbolic planning, AGENTS reduces randomness and ensures consistency in agent behaviors."
+    },
+    {
+        "question": "Can AGENTS be used for research purposes?",
+        "answer": "Yes, AGENTS is research-friendly due to its modular design, enabling researchers to experiment with different configurations easily."
+    },
+    {
+        "question": "What inspired the development of AGENTS?",
+        "answer": "The development was inspired by limitations in existing language agent frameworks, such as lack of modularization, control, and ease of customization."
+    },
+    {
+        "question": "How does AGENTS compare to LangChain and Auto-GPT?",
+        "answer": "Unlike LangChain and Auto-GPT, AGENTS supports symbolic control, multi-agent communication, and human-agent interaction."
+    },
+    {
+        "question": "What is the purpose of the environment class in AGENTS?",
+        "answer": "The environment class abstracts the agent's surroundings, influencing its observations and updating based on agent actions."
+    },
+    {
+        "question": "How does AGENTS define an agent's action loop?",
+        "answer": "AGENTS defines an action loop where an SOP determines transitions, the agent takes action, and the environment updates accordingly."
+    },
+    {
+        "question": "What are the advantages of using AGENTS over other frameworks?",
+        "answer": "AGENTS provides fine-grained control, long-short term memory, multi-agent capabilities, and easier customization for non-specialists."
+    },
+    {
+        "question": "Where can AGENTS be accessed?",
+        "answer": "AGENTS is available as an open-source project on GitHub: https://github.com/aiwaves-cn/agents."
+    }
+]
