@@ -11,7 +11,7 @@ import json
 import pandas as pd
 import os
 
-os.environ["LANGSMITH_API_KEY"] = "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"
+os.environ["LANGSMITH_API_KEY"] = ""
 os.environ["LANGSMITH_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGSMITH_PROJECT"]  = "CRAG"
 os.environ["LANGSMITH_TRACING"] = "true"
