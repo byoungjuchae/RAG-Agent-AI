@@ -10,7 +10,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 import os
 
-os.environ["LANGSMITH_API_KEY"] = "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"
+os.environ["LANGSMITH_API_KEY"] = ""
 os.environ["LANGSMITH_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGSMITH_PROJECT"]  = "CRAG"
 os.environ["LANGSMITH_TRACING"] = "true"
@@ -35,9 +35,8 @@ if __name__ == '__main__':
     
     retriever = Chroma(
     embedding_function=embedding,
-    persist_directory="./chroma_langchain_db",  # Where to save data locally, remove if not necessary
+    persist_directory="./chroma_langchain_db",
 ).as_retriever()
-    #retriever = FAISS.from_documents(docs,embedding=embedding).as_retriever()
 
     compressor = FlashrankRerank()
     compression_retreiver = ContextualCompressionRetriever(base_compressor=compressor,base_retriever=retriever)
