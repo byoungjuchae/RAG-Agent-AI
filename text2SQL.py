@@ -1,6 +1,7 @@
 from langchain_ollama.chat_models import ChatOllama
-from langchain.prompts import PromptTemplate
+from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
 
 
 
@@ -11,11 +12,11 @@ if __name__ == "__main__":
     
     llm = ChatOllama(model='llama3.2:latest')
 
-    prompt_text = "You are an assistant chatbot that creates SQL queries."
+    prompt_text = "You are an SQL master to translate the {question} to SQL grammar. You only respond the SQL."
 
-    prompt = PromptTemplate.from_template( prompt_text)
+    prompt = ChatPromptTemplate.from_template(prompt_text)
 
-    chain = prompt | llm | StrOutputParser()
+    chain = ({"question":RunnablePassthrough()} | prompt | llm | StrOutputParser())
 
-    query = "Generate a SQL query to fetch all customers whose age is greater than 30."
-    print(chain.invoke(query))
+    query = "What movie does have a high rate?"
+    print(chain.invoke({'question':query}))
