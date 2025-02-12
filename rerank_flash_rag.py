@@ -10,7 +10,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 import os
 
-os.environ["LANGSMITH_API_KEY"] = "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"
+os.environ["LANGSMITH_API_KEY"] = ""
 os.environ["LANGSMITH_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGSMITH_PROJECT"]  = "CRAG"
 os.environ["LANGSMITH_TRACING"] = "true"
