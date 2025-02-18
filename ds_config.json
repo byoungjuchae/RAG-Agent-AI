@@ -1,0 +1,25 @@
+{
+    "zero_optimization": {
+      "stage": 2,
+      "offload_optimizer": {
+        "device": "cpu"
+      },
+      "offload_param": {
+        "device": "cpu"
+      }
+    },
+    "bf16": {
+      "enabled": true
+    },
+    "optimizer":{
+        "type":"AdamW",
+        "params":{
+            "lr":"auto",
+            "betas":"auto",
+            "eps":"auto",
+            "weight_decay":"auto"
+        }
+    },
+    "train_micro_batch_size_per_gpu": 8
+  }
+  
