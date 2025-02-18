@@ -2,10 +2,8 @@
     "zero_optimization": {
       "stage": 2,
       "offload_optimizer": {
-        "device": "cpu"
-      },
-      "offload_param": {
-        "device": "cpu"
+        "device": "cpu",
+        "pin_memory": true
       }
     },
     "bf16": {
